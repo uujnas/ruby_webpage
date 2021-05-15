@@ -1,15 +1,130 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap");
+
+.body {
+  font-family: 'Poppins', sans-serif;
+  background-color:#e9f5eb;
+  
+ }
+
+ p{
+     font-size: 16px;
+ }
+
+.navbar{
+    padding: 0px 20px;
+    box-shadow:hsl(0, 0%, 80%) 0 0 5px;
+}
+
+.logo{
+    width:40px;
+    height:40px;
+}
+body{
+    background-color:#e9f5eb;
+}
+
+.nav-item{
+    margin:0px 20px;
+}
+
+
+.back{
+    background-color: #e9f5eb!important;
+}
+
+.banner{
+    margin-top: 5%;
+}
+
+span{
+    color:green;
+}
+.banner_img{
+    width:500px;
+}
+
+.services h4{
+    color:green;
+}
+
+.card{
+    box-shadow: 10px ;
+    border-radius: 10px 10px;
+}
+
+.contact_us{
+    background-color: #4f83e3;
+}
+
+
+#error_message{
+    margin-bottom: 20px;
+    background: #fe8b8e;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+  }
+
+  footer{
+      background: rgb(37, 136, 37);
+  }
+
+  .footer_text{
+      color:#fff;
+  }
+
+  .footer_paragraph{
+      color:#a7a7a7;
+  }
+
+  .link{
+    list-style-type: none;
+    color:#a7a7a7;
+      
+  }
+  .list{
+      font-size: 16px;
+   
+  }
+
+ .link a{
+      text-decoration: none;
+      color: #a7a7a7;
+   
+  }
+
+  .link:hover{
+      text-decoration: none;
+      color: #044b0a;
+  }
+
+p i{
+    color: #a7a7a7;
+    font-size: 20px;
+}
+
+.social_media a i{
+    background: #fff;
+    padding: 5px;
+    color: green;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+.chain-dropdown{
+    margin: auto;
+    background: #1c6121;
+    color: #a7a7a7;
+    padding: 5px 2px;
+    
+}
+
+.contact{
+    color:#a7a7a7;
+}
+
+
+@media (min-width: 992px) and (max-width : 1200px){
+    
+}
