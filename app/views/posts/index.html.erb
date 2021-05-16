@@ -1,19 +1,39 @@
 
-    
+<%= link_to "new post", posts_new_path %>
+
+
+<%# <% @posts.each do |post| %> 
+<%# <%= link_to "show", post %> 
+<%# <%= link_to "Edit", edit_post_path(post) %> 
+<%# <%= link_to "Destroy", delete_post_path(post), method: :delete , data: {confirm: "Are you sure you want to delete the post "}%> 
+
+<%# <% end %> 
+
+
+<p></p><br>
         <% if notice %>
         <%= render 'layouts/alerts' %>
        
         <% end %>
 
- <section class="banner py-5">
+ <section class="banner py-3">
       <div class="container">
           <div class="row custom-section d-flex align-items-center">
               <div class="col-sm-12 col-md-6 col-lg-6">
+              <% @posts.each do |post| %>
                   <h3>
-                      Some user-friendly software built on time within your <span>budget!</span>
+                      <%= post.title %>
                   </h3>
-                  <p>At Idea Breed, we have a passion for turining ideas into reality. Our world-class team is fluent in Ruby on Rails, Python, Node.js, React, React Naive, ios, Flutter, Android and we're ready to design, built and train so your product is rock-solid and user-friendly.</p>
+                  <p><%= post.body %></p>
                   <a href="#">  <button type="button" class="btn btn-success">Contact Us</button></a>
+
+                    <% if user_signed_in? %>                 
+                        <%= link_to "Edit", edit_post_path(post) %> 
+                                      <% else %>
+
+                               <% end %>
+
+                  <% end %>
                 </div>            
           <div class="col-sm-12 col-md-6 col-lg-6">
           <%= image_tag 'software-development.png', class:'banner_img' %>
