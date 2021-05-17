@@ -1,0 +1,55 @@
+<div class="container py-5">
+
+<div class="row pt-5">
+
+<div class="col-md-12">
+<%= link_to 'Add services',  services_new_path, class:"btn btn-success btn-sm " %>
+
+
+<section class="services py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="text-center"> Our Services</h4>
+                    <p class="text-center">We are dedicated to provide cost-effective quality output in lesser time.<br>
+                    Contact us and lets work on your project.</p>
+                </div>
+
+              
+                <% @services.each do |service| %>
+                  <div class="col-md-4 col-sm-6 py-2">
+                      <div class="card">
+                        <div class="card-body  text-center">
+                          <%# <%= image_tag service.service_icon, class:'services_img'%> 
+
+                          <h6 class="card-text "><%= service .title %></h6>
+                          <p><%= service .body %></p>
+                          <p> <%= link_to 'Edit', edit_service_path(service) %>
+                            <%= link_to 'delete', delete_service_path(service), method: :delete %></p>
+                   
+                        </div>
+                      </div>
+                      </div>  
+                      <% end %>
+                                             
+            </div>
+        </div>
+       
+    </section>
+    
+
+
+
+
+
+
+
+<%# <%= link_to 'show', service %> 
+
+
+
+
+</div>
+</div>
+
+</div>

@@ -124,6 +124,11 @@ p i{
     color:#a7a7a7;
 }
 
+.services_img{
+    height: 50px;
+    width: 50px;
+}
+
 
 @media (min-width: 992px) and (max-width : 1200px){
     
