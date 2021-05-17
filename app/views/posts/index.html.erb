@@ -26,6 +26,12 @@
                   </h3>
                   <p><%= post.body %></p>
                   <a href="#">  <button type="button" class="btn btn-success">Contact Us</button></a>
+                  </div>
+                  
+                  <div class="col-sm-12 col-md-6 col-lg-6">
+                    <%= image_tag post.file, class:'banner_img'%>
+          <%# <%= image_tag 'software-development.png', class:'banner_img' %>
+                  </div>
 
                     <% if user_signed_in? %>                 
                         <%= link_to "Edit", edit_post_path(post) %> 
@@ -35,9 +41,7 @@
 
                   <% end %>
                 </div>            
-          <div class="col-sm-12 col-md-6 col-lg-6">
-          <%= image_tag 'software-development.png', class:'banner_img' %>
-          </div>
+          
 
       </div>
     </section>
